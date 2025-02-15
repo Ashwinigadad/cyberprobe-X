@@ -47,9 +47,10 @@ export default function Navbar() {
 
             {/* ✅ Right Section (Sign-in & CTA Button) */}
             <div className='flex items-center gap-4'>
-                <div className={`font-medium text-lg ${isScroll ? "text-gray-800" : "text-white"}`}>
-                    Sign in
-                </div>
+            <a href="/signin" className={`hidden lg:flex items-center gap-3 px-10 py-2.5 border font-medium text-lg border-gray-500 rounded-2xl ml-4 relative overflow-hidden group transition-colors duration-500 ${isScroll ? "text-gray-800 hover:text-black" : "text-white hover:text-black"}`}>
+                    <span className="relative z-10">SignIn</span>
+                    <span className="absolute inset-0 bg-[#91ff00] scale-x-0 origin-left transition-transform duration-1000 ease-out group-hover:scale-x-100"></span>
+                </a>
                 <a href="#contact" className={`hidden lg:flex items-center gap-3 px-10 py-2.5 border font-medium text-lg border-gray-500 rounded-2xl ml-4 relative overflow-hidden group transition-colors duration-500 ${isScroll ? "text-gray-800 hover:text-black" : "text-white hover:text-black"}`}>
                     <span className="relative z-10">Speak to Sales</span>
                     <span className="absolute inset-0 bg-[#91ff00] scale-x-0 origin-left transition-transform duration-1000 ease-out group-hover:scale-x-100"></span>
